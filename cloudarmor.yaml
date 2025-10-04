@@ -1,0 +1,9 @@
+apiVersion: cloud.google.com/v1  
+kind: BackendConfig  
+metadata:  
+  name: backend-config  
+  namespace: dev  
+spec:  
+  timeoutSec: 300
+  securityPolicy:  
+    name: cloud-armor-pol  
